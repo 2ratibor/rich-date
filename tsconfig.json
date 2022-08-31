@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "src",
+        "sourceMap": false,
+        "target": "es2015",
+        "module": "es2020"
+    },
+    "include": [
+        "src/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

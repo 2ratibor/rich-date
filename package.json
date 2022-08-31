@@ -1,0 +1,25 @@
+{
+    "name": "rich-date",
+    "version": "1.0.0",
+    "description": "The utility that makes your work with dates much easier",
+    "main": "src/rich-date.js",
+    "scripts": {
+        "compile": "tsc --build",
+        "files-copying": "ncp src/rich-date.js node_modules/rich-date/rich-date.js && ncp README.md node_modules/rich-date/README.md",
+        "build": "npm run compile && npm run files-copying",
+        "publish": "cd node_modules/rich-date/ && npm version patch && npm publish"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "ncp": "2.0.0",
+        "typescript": "^4.8.2"
+    },
+    "keywords": [
+        "utility for dates",
+        "work with dates",
+        "date format",
+        "date manipulations"
+    ],
+    "author": "Denys Stepanov(dex.stepanov@gmail.com)",
+    "license": "MIT"
+}

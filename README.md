@@ -1,9 +1,4 @@
-# Rich Date
-#### The utility that makes your work with dates much easier
-<br>
+# This code is still on development stage
 
-### Installation of package:
-```
-npm i rich-date --save
-```
+#### Please do not use it yet
 

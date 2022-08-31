@@ -1,6 +1,6 @@
 {
-    "name": "rich-date",
-    "version": "0.0.1",
+    "name": "rich-date-project",
+    "version": "1.0.0",
     "description": "The utility that makes your work with dates much easier",
     "main": "src/rich-date.js",
     "type": "module",
@@ -10,7 +10,9 @@
         "build": "npm run compile && npm run files-copying",
         "publish": "cd node_modules/rich-date/ && npm version patch && npm publish"
     },
-    "dependencies": {},
+    "dependencies": {
+        "rich-date": "^0.0.2"
+    },
     "devDependencies": {
         "ncp": "2.0.0",
         "typescript": "^4.8.2"

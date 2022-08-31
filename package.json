@@ -1,6 +1,6 @@
 {
     "name": "rich-date",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "The utility that makes your work with dates much easier",
     "main": "src/rich-date.js",
     "type": "module",

@@ -21,5 +21,9 @@
         "date manipulations"
     ],
     "author": "Denys Stepanov(dex.stepanov@gmail.com)",
-    "license": "MIT"
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/2ratibor/rich-date/issues"
+    },
+    "homepage": "https://github.com/2ratibor/rich-date#readme"
 }

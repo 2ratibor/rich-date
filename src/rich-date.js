@@ -3,4 +3,3 @@ export class RichDate extends Date {
         console.log(1111, `${this.getHours()}:${this.getMinutes()}:${this.getSeconds()}`);
     }
 }
-new RichDate().test();

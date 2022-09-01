@@ -4,4 +4,3 @@ export class RichDate extends Date {
     }
 }
 
-new RichDate().test();

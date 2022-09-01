@@ -6,7 +6,7 @@
     "type": "module",
     "scripts": {
         "compile": "tsc --build",
-        "files-copying": "ncp src/rich-date.js node_modules/rich-date/rich-date.js && ncp README.md node_modules/rich-date/README.md",
+        "files-copying": "ncp src node_modules/rich-date && ncp README.md node_modules/rich-date/README.md",
         "build": "npm run compile && npm run files-copying",
         "publish": "cd node_modules/rich-date/ && npm version patch && npm publish"
     },

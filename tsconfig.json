@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "outDir": "src",
+        "allowJs": true,
         "sourceMap": false,
+        "moduleResolution": "node",
         "target": "es2015",
         "module": "es2020"
     },

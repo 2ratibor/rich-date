@@ -1,16 +1,13 @@
 {
     "compilerOptions": {
-        "outDir": "src",
+        "outDir": "dist",
         "allowJs": true,
-        "sourceMap": false,
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
         "moduleResolution": "node",
         "target": "es2015",
         "module": "es2020"
     },
-    "include": [
-        "src/*.ts"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+    "include": ["src/**/*"]
 }

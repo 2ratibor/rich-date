@@ -42,7 +42,7 @@ class RichDate extends Date {
     }
 }
 
-export function richDate(date: string | number | Date) {
+export function richDate(date?: string | number | Date) {
     return (date instanceof Date)
         ? new RichDate(date.getTime())
         : ((typeof date === 'string' && date !== '') || typeof date === 'number')

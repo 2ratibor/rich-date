@@ -14,7 +14,6 @@
         "rich-date": "^0.0.9"
     },
     "devDependencies": {
-        "jsdoc-to-markdown": "^7.1.1",
         "ncp": "2.0.0",
         "typescript": "^4.8.2"
     },

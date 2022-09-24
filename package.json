@@ -11,7 +11,7 @@
         "publish": "cd node_modules/rich-date/ && npm version patch && npm publish"
     },
     "dependencies": {
-        "rich-date": "^0.0.12"
+        "rich-date": "^0.0.13"
     },
     "devDependencies": {
         "ncp": "2.0.0",

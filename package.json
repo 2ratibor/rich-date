@@ -1,6 +1,6 @@
 {
     "name": "rich-date-project",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The utility that makes your work with dates much easier",
     "main": "./src/rich-date.ts",
     "type": "module",

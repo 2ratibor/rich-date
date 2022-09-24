@@ -1,4 +1,6 @@
-# The `rich-date` is the npm package, that makes your work with dates much easier.
+# rich-date
+
+## The `rich-date` is the npm package, that makes your work with dates much easier.
 
 ## Installation
 ```

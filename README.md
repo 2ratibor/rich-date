@@ -2,6 +2,7 @@
 
 ### The `rich-date` is the npm package, that makes your work with dates much easier.
 <br>
+<br>
 
 ## Installation
 ```

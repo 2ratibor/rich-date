@@ -22,7 +22,8 @@ enum ChangeActions {
 class RichDate extends Date {
     /**
      * Transform RichDate object to string with specific pattern
-     * @param outputDateFormat - specific pattern for resulting string.
+     * @param outputDateFormat {DateFormats | string} - specific pattern for resulting string
+     * @returns {string}
      * Pattern abbreviations:
      *  YYYY - years,
      *  MM - months,
@@ -48,9 +49,10 @@ class RichDate extends Date {
 
     /**
      * Get the difference between RichDate and date from "dateForComparing" parameter, in required units
-     * @param dateForComparing - date to compare with RichDate
-     * @param timeUnits - units for result value. Possible values: 'YEARS', 'MONTHS' or 'DAYS'
-     * @param useDecimal - default value FALSE. If you set TRUE, you will receive more precise result
+     * @param dateForComparing {RichDate | Date} - date to compare with RichDate
+     * @param timeUnits {TimeUnits | string} - units for result value. Possible values: 'YEARS', 'MONTHS' or 'DAYS'
+     * @param useDecimal {boolean} - default value FALSE. If you set TRUE, you will receive more precise result
+     * @returns {number}
      */
     diff(dateForComparing: RichDate | Date, timeUnits: TimeUnits | string = TimeUnits.YEARS, useDecimal: boolean = false): number {
         switch (timeUnits) {
@@ -100,7 +102,8 @@ class RichDate extends Date {
 
     /**
      * Check that RichDate happened before date from "dateForComparing" parameter
-     * @param dateForComparing - date to compare with RichDate
+     * @param dateForComparing {RichDate | Date} - date to compare with RichDate
+     * @returns {boolean}
      */
     isBefore(dateForComparing: RichDate | Date): boolean {
         return (this.getTime() < dateForComparing.getTime());
@@ -108,7 +111,8 @@ class RichDate extends Date {
 
     /**
      * Check that RichDate happened after date from "dateForComparing" parameter
-     * @param dateForComparing - date to compare with RichDate
+     * @param dateForComparing {RichDate | Date} - date to compare with RichDate
+     * @returns {boolean}
      */
     isAfter(dateForComparing: RichDate | Date): boolean {
         return (dateForComparing.getTime() < this.getTime());
@@ -116,9 +120,10 @@ class RichDate extends Date {
 
     /**
      * Check that RichDate happened between two dates from parameters
-     * @param dateA - first date to compare with RichDate
-     * @param dateB - second date to compare with RichDate
-     * @param betweenOrEqual - default value FALSE. If you set TRUE, you will receive positive result even if dateA or dateB is equal RichDate
+     * @param dateA {RichDate | Date} - first date to compare with RichDate
+     * @param dateB {RichDate | Date} - second date to compare with RichDate
+     * @param betweenOrEqual {boolean} - default value FALSE. If you set TRUE, you will receive positive result even if dateA or dateB is equal RichDate
+     * @returns {boolean}
      */
     isBetween(dateA: RichDate | Date, dateB: RichDate | Date, betweenOrEqual: boolean = false): boolean {
         let earlierDate: RichDate | Date;
@@ -143,8 +148,9 @@ class RichDate extends Date {
 
     /**
      * Add to RichDate some amount of time
-     * @param amountOfTime - the amount of time to add
-     * @param timeUnits - the units of added time
+     * @param amountOfTime {number} - the amount of time to add
+     * @param timeUnits {TimeUnits | string} - the units of added time
+     * @returns {RichDate}
      */
     add(amountOfTime: number, timeUnits: TimeUnits | string = TimeUnits.YEARS): RichDate {
         return this.change(ChangeActions.ADD, amountOfTime, timeUnits);
@@ -152,8 +158,9 @@ class RichDate extends Date {
 
     /**
      * Subtract from RichDate some amount of time
-     * @param amountOfTime - the amount of time to subtract
-     * @param timeUnits - the units of subtracted time
+     * @param amountOfTime {number} - the amount of time to subtract
+     * @param timeUnits {TimeUnits | string} - the units of subtracted time
+     * @returns {RichDate}
      */
     subtract(amountOfTime: number, timeUnits: TimeUnits | string = TimeUnits.YEARS): RichDate {
         return this.change(ChangeActions.SUBTRACT, amountOfTime, timeUnits);
